@@ -1,0 +1,550 @@
+/* Tambahkan kode CSS kalian di file ini */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+nav{
+    height: 60px;
+    background-color: #8a00d4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 5px;
+    font-size: 6vmin;
+    color: #32005ac2;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 3.5vmin;
+    line-height: 1.5;
+    animation-delay: 0.5s;
+    color: #32005ac2;
+}
+
+.column-left .btn-join {
+    animation-delay: 1s;
+}
+
+span {
+    color: #ff8800;
+    font-size: larger;
+}
+
+.btn-join {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #8a00d4;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn-join a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-join:hover {
+    background-color: #ffaf25;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-join:hover a {
+    color: #8a00d4;
+}
+
+.btn-join2 {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #7904b8;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn-join2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-join2:hover {
+    background-color: #ffaf25;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-join2:hover a {
+    color: #8a00d4;
+}
+
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem
+}
+
+.hero-image {
+    width: 80%;
+    height: 80%;
+}
+
+
+/*animated movement*/
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*About styling*/
+.about {
+    background-color: #ffd895;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.about .columnright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0rem 2rem;
+}
+
+.about-container-reverse .columleft h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #8a00d4;
+}
+
+.columnleft p {
+    margin-bottom: 2rem;
+    font-size: 3vmin;
+    line-height: 1.5;
+    animation-delay: 0.5s;
+    color: #32005ac2;
+}
+
+.columnleft h2 {
+    margin-bottom: 5px;
+    font-size: 5vmin;
+    color: #32005ac2;
+}
+
+.columnleft {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem;
+}
+
+
+.about-image {
+    width: 70%;
+    height: 70%;
+}
+
+/*from styling*/
+section.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Activity section*/
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container h2 {
+    font-size: 6vmin;
+    color: #32005ac2;
+}
+
+.container p {
+    font-size: 3.5vmin;
+    line-height: 1.5;
+    color: #32005ac2;
+}
+
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background-color: #c69dff86;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.1s;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imgBx {
+    width: 300px;
+    height: 220px;
+    background-color: #333;
+    position: absolute;
+    top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.container .card:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 120px;
+    height: 250px;
+}
+
+.container .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.container .card .content p {
+    color: #333;
+    font-size: 1.05em;   
+    margin-top: 15px;
+}
+
+.container h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* Styling for the form and its elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #cf7b7b;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+.inline{
+    display: inline-block;
+    margin-top: -14px;
+    margin-left: 75vh;
+}
+
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #8a00d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffb73a;
+    color: #49026e;
+    font-weight: bold;
+}
+
+#warning {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #8a00d4;
+    padding: 70px 0;
+}
+
+.footerContainer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 30%;
+    padding: 0 55px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h3::before {
+    container: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #8a00d4;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #e2e2e2;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 30px;
+    width: 55px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: #f9f9f9;
+}
+
+.footer-col .social-links a:hover {
+    color: #8a00d4;
+    background-color: #ffb73a;
+}
+
+
+
+/*Responsive styling*/
+@media (max-width: 600px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        height: 120vh;
+    }
+
+    .about {
+        height: 120vh;
+    }
+
+    .column-left h1{
+        margin-top: 35px;
+    }
+
+    .btn-join {
+        padding: 10px 20px;
+        margin-top: -10px;
+        font-size: 1rem;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .columnleft, .columnright {
+        padding: 1rem;
+    }
+
+    .columnright {
+        align-items: center;
+        text-align: center;
+        order: 1;
+    }
+
+    .columnright h2{
+        margin-top: 35px;
+    }
+
+    section.form-container {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        padding: 8px;
+    }
+
+    input[type="checkbox"] {
+        margin: -10px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Tambahkan kode kalian di sini -->
+    <nav class="navbar">
+        <div class="logo">We<span>Ther</span></div>
+        <div class="nav-item">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#activity">Activity</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1 class="anim">Mengubah Kehidupan di Daerah <span>3T</span> di Indonesia</h1><br>
+                <p id="description" class="anim"> Selamat datang di dedikasi komunitas pengembangan perempuan di daerah terpinggirkan di Indonesia. "Zona Aman" di mana para perempuan dapat saling terhubung, berbagi dan mengembangkan keterampilan. <br>.
+                    <br>For <span>Together</span>.. <span>We</span> <em><b>Glow</b></em>
+                </p>
+                <button class="btn-join anim"><a href="#about">Explore</a></button>
+            </div>
+            <div class="column-right">
+                <img src="https://i.postimg.cc/bvVLHjjQ/favpng-womens-empowerment-woman-gender-equality-self-help-group.png" alt="" class="hero-image anim" />
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-container reverse">
+            <div class="columnright">
+                <img src="https://i.postimg.cc/yYvCQYm5/download-1.jpg" alt="" class="about-image anim">
+            </div>
+            <div class="columnleft">
+                <h2 class="anim"><span>We</span> - <span>Together</span></h1>
+                <p class="anim">Perempuan di daerah 3T menghadapi berbagai kendala yang menghambat pertumbuhan dan potensi mereka, seperti Akses Pendidikan yang Terbatas, Kekurangan Perawatan Kesehatan, Hingga norma tradisional yang seringkali membatasi peran perempuan dalam pengambilan keputusan. <span>We</span> Toge<span>ther</span>, A Community for Women berdedikasi sebagai wadah untuk menciptakan lingkungan pemberdayaan perempuan yang supportive untuk bertumbuh bersama.  <br><span>We</span> believe in the strength and potential of every woman. <span>Together</span> we can create a brighter future for our Friends</p>
+                <button class="btn-join2 anim"><a href="#join">Get Involved</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="activity">
+        <h2>Our Activities</h2>
+        <p>Dilatarbelakangi tantangan-tantangan tersebut, beberapa kegiatan secara berkala dan aktif dilakukan didalam komunitas diantaranya :</p>
+        <div class="card">
+            <div class="imgBx">
+                <img src="https://img.freepik.com/free-vector/organic-flat-business-people-collection_23-2148958161.jpg" alt="Mentoring" />
+            </div>
+            <div class="content">
+                <h2>Career Guidance</h2>
+                <p>Fokus utama dalam kegiatan ini adalah memasangkan para profesional berpengalaman dengan para wanita yang mencari bimbingan dalam karier atau pengembangan pribadi mereka. Serta menyelenggarakan sesi kelompok di mana para mentor dapat mengatasi tantangan umum dan berbagi wawasan.</p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-neuroeducation-illustration_23-2150983111.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1712102400&semt=ais" alt="Skill Development" />
+            </div>
+            <div class="content">
+                <h2>Educational Workshop</h2>
+                <p>Berbagai kegiatan seperti Lokakarya Kepemimpinan yang menawarkan pelatihan tentang keterampilan kepemimpinan, berbicara di depan umum, dan membangun kepercayaan diri, mengadakan lokakarya pembuatan resume, persiapan wawancara, dan transisi karier, serta menyediakan sesi tentang penganggaran, investasi, dan perencanaan keuangan.</p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="https://img.freepik.com/free-vector/girls-playing-ludo-game-home_23-2148705744.jpg" alt="Event & Project" />
+            </div>
+            <div class="content">
+                <h2>Event & Project</h2>
+                <p>Berbagai acara sosial seperti makan siang dan petualangan di luar ruangan untuk memupuk persahabatan dan mempererat ikatan dan pertumbuhan pribadi dalam lingkungan yang santai. Serta memberikan dukungan untuk pendidikan, usaha bisnis, dan peluang pengembangan pribadi lainnya.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <div class="heading" id="join">Register to Join W3mpower</div>
+        <form>
+                
+            Name
+            <input id="name" type="text" name="name" required>
+                
+            City
+            <input id="city" type="text" name="city" required>
+                
+            Email
+            <input id="email" type="email" name="email" required>
+                
+            Zip-code
+            <input id="zip-code" type="number" name="zipCode" required>
+                
+            <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+            <input id="status" type="checkbox" class="inline" >
+                
+            <button id="submit-form" type="submit">Submit</button>
+            
+            <div id="warning"></div>
+        </form>
+    </section>
+
+    <!--
+    <footer>
+        <div class="logo">Resa Arfita H. &copy;2024</div>
+        <div class="contact" id="contact">
+            <ol><b>CONTACT</b>:
+                <li class="item"><a href="#">Email</a></li>
+                <li class="item"><a href="#">Instagram</a></li>
+                <li class="item"><a href="#">Twitter(X)</a></li>
+                <li class="item"><a href="https://skilvul.com" id="link">Skilvul</a></li>
+            </ol>
+        </div>
+    </footer>
+    -->
+
+    <footer>
+        <div class="footerContainer" id="contact">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#activity">Activity</a></li>
+                        <li class="item"><a href="https://skilvul.com" id="link"><em>Skilvul</em></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="">Email@gmail.com</a></li>
+                        <li><a href="">+62 8123 ***</a></li>
+                        <li><a href="">Jkt jl. 123 no.1</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Social</h3>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
